@@ -1,0 +1,20 @@
+{
+  "name": "@adviverse/svelte",
+  "version": "0.1.0",
+  "description": "Svelte <AdSlot /> component for Adviverse ad slots.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/Adviverse/svelte.git" },
+  "homepage": "https://github.com/Adviverse/svelte#readme",
+  "bugs": { "url": "https://github.com/Adviverse/svelte/issues" },
+  "type": "module",
+  "svelte": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": { ".": { "types": "./src/index.ts", "svelte": "./src/index.ts", "default": "./src/index.ts" } },
+  "sideEffects": false,
+  "files": ["src", "README.md"],
+  "scripts": { "build": "node scripts/check.mjs", "typecheck": "echo 'source-shipped; no typecheck'", "test": "node --test" },
+  "keywords": ["adviverse", "ads", "svelte", "sveltekit", "adslot"],
+  "peerDependencies": { "svelte": ">=4" },
+  "dependencies": { "@adviverse/element": "^0.1.0" },
+  "devDependencies": { "svelte": "^5.0.0" }
+}
